@@ -1,0 +1,108 @@
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+a li {
+    color: black;
+    display: inline-block;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Oxygen', sans-serif;
+
+}
+
+svg {
+    margin-bottom: 0.15em;
+}
+
+.img-fluid {
+    height: 260px;
+    width: 200px;
+}
+
+.actor-image {
+    height: 230px;
+    width: 165px;
+    border-radius: 5%;
+}
+
+.series-image {
+    height: 260px;
+    width: 180px;
+    border-radius: 3%;
+}
+
+.movie-image {
+    height: 260px;
+    width: 180px;
+    border-radius: 3%;
+}
+
+.SearchBar {
+    color: white;
+}
+
+.position-absolute {
+
+    width: 250%;
+
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.favourite-watched img {
+
+    width: 60px;
+    height: 90px;
+}
+
+.carousel-control {
+    position: absolute;
+
+
+}
+
+.carousel-control-next,
+.carousel-control-prev
+
+/*, .carousel-indicators */
+    {
+    filter: invert(100%);
+}
+
+.carousel-control-next {
+    transform: translate(90%, 0);
+}
+
+.carousel-control-prev {
+    transform: translate(-90%, 0);
+}
+
+.minicard img {
+    width: 110px;
+    height: 150px;
+}
+
+.icon-home {
+
+    margin-bottom: 0;
+    transform: translate(0, -867%);
+    width: 3.5em;
+    padding-left: 4px;
+    padding-top: 1px;
+    border-bottom-right-radius: 10%;
+}
+
+.user-rating {
+font-size: 0.8em;
+}
