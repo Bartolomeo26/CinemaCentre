@@ -22,7 +22,7 @@ export default function Carousel({ data, unique, title, dataType, category, icon
                         {
                             if (i === 0)
                                 return (
-                                    <div className="carousel-item active" key={production._id}>
+                                    <div className="carousel-item active position-relative" key={production._id}>
                                         <Link to={`/${dataType}/${production._id}`} >
                                             <img src={production.imageUrl} className="d-block" alt="..." />
                                             <div className="bg-light icon-home ">

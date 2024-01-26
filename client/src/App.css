@@ -98,13 +98,15 @@ svg {
 }
 
 .icon-home {
-
-    margin-bottom: 0;
-    transform: translate(0, -867%);
-    width: 3.5em;
-    padding-left: 4px;
-    padding-top: 1px;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    height: 25px;
     border-bottom-right-radius: 10%;
+    top: 0;
+
 }
 
 .user-rating {
