@@ -11,14 +11,14 @@
 .search-result {
     padding: 10px 20px;
     text-decoration: none;
-    color:white;
-    
+    color: white;
+
 }
 
 .search-result:hover {
-    background-color:#595c5f;
+    background-color: #595c5f;
 }
 
-.results-list div{
-width:33%;
+.results-list div {
+    width: 33%;
 }

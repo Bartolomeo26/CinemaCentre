@@ -7,15 +7,15 @@ import { getIconButtonUtilityClass } from "@mui/material";
 export default function Carousel({ data, unique, title, dataType, category, icon })
 {
     let importantData = null;
-    if(category==='top') importantData = `production.rating`
-    else if(category==='favourite') importantData = `production.favouriteNumber`
-    else importantData=`production.reviews.length`
+    if (category === 'top') importantData = `production.rating`
+    else if (category === 'favourite') importantData = `production.favouriteNumber`
+    else importantData = `production.reviews.length`
 
     return (
         <>
             <div className="d-flex flex-column align-items-center">
                 <h1>{title}</h1>
-                <div id={`carousel${unique}`} className="carousel slide">
+                <div id={`carousel${unique}`} className="carousel slide mt-2">
 
                     <div className="carousel-inner">
                         {data.map((production, i) =>

@@ -14,7 +14,7 @@ async function main()
 async function addMovies()
 {
     await Movie.deleteMany({});
-    for (let i = 1; i <= 3; i++)
+    for (let i = 1; i <= 20; i++)
     {
         const movie = await Movie.create({...movies[i-1], _id: i });
         await movie.save();

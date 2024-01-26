@@ -99,18 +99,21 @@ export default function SearchBar()
 
                 productions[2] = results;
             });
-            for(let i=0; i<productions.length; i++)
-            {productions[i] = productions[i].slice(0,5);
-            }
-            
-        console.log(productions)
+        for (let i = 0; i < productions.length; i++)
+        {
+            productions[i] = productions[i].slice(0, 5);
+        }
+
+
         setResults(productions);
     };
 
     const handleChange = (value) =>
     {
+
         setInput(value);
         getData(value);
+
     };
 
     const clearInput = () =>
@@ -122,7 +125,7 @@ export default function SearchBar()
 
     return (
         <>
-        
+
             <Search className='SearchBar' >
                 <SearchIconWrapper>
                     <SearchIcon />
@@ -137,7 +140,7 @@ export default function SearchBar()
             {results ? <div className='position-absolute'>
                 {results && results.length > 0 && <SearchResultsList results={results} clearInput={clearInput} />}
             </div> : ''}
-            
+
         </>
 
     );

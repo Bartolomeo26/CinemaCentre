@@ -2,8 +2,9 @@
     height: 250px;
     width: 180px;
 }
+
 .carousel {
     height: 250px;
     width: 180px;
+    box-shadow: -2px 15px 60px 0px rgba(66, 68, 90, 1);
 }
-

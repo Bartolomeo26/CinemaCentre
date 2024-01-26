@@ -14,7 +14,7 @@ async function main()
 async function addSeries()
 {
     await Series.deleteMany({});
-    for (let i = 1; i <= 5; i++)
+    for (let i = 1; i <= 20; i++)
     {
         const newSeries = await Series.create({...series[i-1], _id: i });
         await newSeries.save();
