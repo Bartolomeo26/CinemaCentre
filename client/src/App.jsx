@@ -24,6 +24,7 @@ function App()
 {
 
   const [authState, setAuthState] = useState(false);
+  console.log(authState);
 
 
 

@@ -7,7 +7,7 @@ import Alert from '../Alert';
 export default function Login()
 {
     const [formData, setFormData] = useState({ username: "", password: "" });
-    const { setAuthState } = useContext(AuthContext);
+    const { authState, setAuthState } = useContext(AuthContext);
     const [error, setError] = useState(null);
 
     const navigate = useNavigate();
@@ -28,7 +28,7 @@ export default function Login()
             else
             {
                 localStorage.setItem('accessToken', response.data);
-                setAuthState(true);
+                setAuthState(!authState);
                 navigate('/');
             }
         })

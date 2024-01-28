@@ -4,12 +4,12 @@ import { AuthContext } from "../helpers/AuthContext";
 
 export default function Logout()
 {
-    const { setAuthState } = useContext(AuthContext);
+    const { authState, setAuthState } = useContext(AuthContext);
 
     useEffect(() =>
     {
         localStorage.clear();
-        setAuthState(false);
+        setAuthState(!authState);
 
     })
     return <Navigate to="/" />
