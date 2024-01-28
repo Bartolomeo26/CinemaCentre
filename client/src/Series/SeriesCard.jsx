@@ -11,7 +11,7 @@ export default function SeriesCard({ serie })
                         <img src={serie.imageUrl} className="img-fluid rounded-start" alt="serie image" />
                     </div>
                     <div className="col-md-8">
-                        <div className="card-body">
+                        <div className="card-body pb-0">
                             <div className="d-flex justify-content-between">
                                 <h5 className="card-title fw-bold">{serie.title}</h5>
                                 <h5><StarIcon style={{ color: 'gold' }} />{serie.rating}/10</h5>

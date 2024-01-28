@@ -5,7 +5,7 @@ module.exports.movies = [{
     country: "USA",
     director: "Christopher Nolan",
     releaseYear: 2014,
-    actors: [1]
+    actors: [1, 11, 28]
 },
 {
     title: "Green Mile",
@@ -14,7 +14,7 @@ module.exports.movies = [{
     country: "USA",
     director: "Frank Darabont",
     releaseYear: "1999",
-    actors: [8]
+    actors: [8, 25, 26]
 
 },
 {
@@ -34,17 +34,7 @@ module.exports.movies = [{
     country: "USA",
     director: "Francis Ford Coppola",
     releaseYear: 1972,
-    actors: []
-
-},
-{
-    title: "Schindler's List",
-    imageUrl: "https://m.media-amazon.com/images/M/MV5BNDE4OTMxMTctNmRhYy00NWE2LTg3YzItYTk3M2UwOTU5Njg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
-    description: "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
-    country: "USA",
-    director: "Steven Spielberg",
-    releaseYear: 1993,
-    actors: []
+    actors: [17, 35]
 
 },
 {
@@ -54,7 +44,7 @@ module.exports.movies = [{
     country: "USA",
     director: "Quentin Tarantino",
     releaseYear: 1994,
-    actors: []
+    actors: [32, 15]
 
 },
 {
@@ -64,7 +54,7 @@ module.exports.movies = [{
     country: "USA",
     director: "Robert Zemeckis",
     releaseYear: 1994,
-    actors: []
+    actors: [8, 22]
 
 },
 {
@@ -74,7 +64,7 @@ module.exports.movies = [{
     country: "USA",
     director: "Christopher Nolan",
     releaseYear: 2010,
-    actors: []
+    actors: [2, 27, 12]
 
 },
 {
@@ -84,7 +74,7 @@ module.exports.movies = [{
     country: "USA",
     director: "Frank Darabont",
     releaseYear: 1999,
-    actors: []
+    actors: [10, 21]
 
 },
 {
@@ -94,17 +84,17 @@ module.exports.movies = [{
     country: "France/Poland/United Kingdom/Germany",
     director: "Roman Polański",
     releaseYear: 2002,
-    actors: []
+    actors: [18, 34]
 
 },
 {
     title: "Seven",
-    imageUrl: "https://fwcdn.pl/fpo/10/48/1048/6925401.6.jpg",
+    imageUrl: "https://fwcdn.pl/fpo/07/02/702/8021069.3.jpg",
     description: "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.",
     country: "USA",
     director: "David Fincher",
     releaseYear: 1995,
-    actors: []
+    actors: [10, 3]
 
 },
 {
@@ -114,27 +104,27 @@ module.exports.movies = [{
     country: "USA",
     director: "Christopher Nolan",
     releaseYear: 2023,
-    actors: []
+    actors: [12, 11, 16, 29]
 
 },
 {
-    title: "Intouchables",
-    imageUrl: "https://m.media-amazon.com/images/M/MV5BODY0MDM1MDE2OV5BMl5BanBnXkFtZTcwMzEyMjkyNw@@._V1_.jpg",
-    description: "After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caregiver.",
-    country: "France",
-    director: "Olivier Nakache",
-    releaseYear: 2011,
-    actors: []
+    title: "The Wolf of Wall Street",
+    imageUrl: "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_.jpg",
+    description: "Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.",
+    country: "USA",
+    director: "Martin Scorsese",
+    releaseYear: 2010,
+    actors: [1, 2, 71]
 
 },
 {
     title: "The Silence of the Lambs",
-    imageUrl: "https://fwcdn.pl/fpo/10/48/1048/6925401.6.jpg",
+    imageUrl: "https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
     description: "A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.",
     country: "USA",
     director: "Jonathan Demme",
     releaseYear: 1991,
-    actors: []
+    actors: [30, 31]
 
 },
 {
@@ -144,7 +134,7 @@ module.exports.movies = [{
     country: "USA",
     director: "Steven Spielberg",
     releaseYear: 1998,
-    actors: [8]
+    actors: [8, 11]
 
 },
 {
@@ -154,7 +144,7 @@ module.exports.movies = [{
     country: "USA",
     director: "Ridley Scott",
     releaseYear: 2000,
-    actors: []
+    actors: [23, 24]
 
 },
 {
@@ -164,7 +154,7 @@ module.exports.movies = [{
     country: "USA",
     director: "Martin Scorsese",
     releaseYear: 2006,
-    actors: []
+    actors: [2, 11]
 
 },
 {
@@ -174,7 +164,7 @@ module.exports.movies = [{
     country: "USA",
     director: "Christopher Nolan",
     releaseYear: 2006,
-    actors: []
+    actors: [19, 20, 33]
 
 },
 {
@@ -184,7 +174,7 @@ module.exports.movies = [{
     country: "USA",
     director: "Quentin Tarantino",
     releaseYear: 2012,
-    actors: []
+    actors: [14, 2, 15]
 
 },
 {
@@ -194,6 +184,16 @@ module.exports.movies = [{
     country: "Denmark",
     director: "Thomas Vinterberg",
     releaseYear: 2012,
-    actors: []
+    actors: [13]
+
+},
+{
+    title: "Rain Man",
+    imageUrl: "https://fwcdn.pl/fpo/10/08/1008/7521209.6.jpg",
+    description: "After a selfish L.A. yuppie learns his estranged father left a fortune to an autistic-savant brother in Ohio that he didn't know existed, he absconds with his brother and sets out across the country, hoping to gain a larger inheritance.",
+    country: "USA",
+    director: "Barry Levinson",
+    releaseYear: 1988,
+    actors: [5, 70]
 
 }];

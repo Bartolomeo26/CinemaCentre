@@ -141,21 +141,21 @@ export default function MovieDetails()
                             </div>
                         </div>
                         {user && movie.reviews &&
-                        <div className="me-5">
+                            <div className="me-5">
 
-                            {movie.reviews.map((review) =>
-                            {
-                                if (review.author._id === user._id)
+                                {movie.reviews.map((review) =>
                                 {
-                                    return (<div className="d-flex flex-column align-items-center" key={review._id}>
-                                        <h1>Your review!</h1>
-                                        <Review review={review} />
-                                    </div>
-                                    )
-                                }
+                                    if (review.author._id === user._id)
+                                    {
+                                        return (<div className="d-flex flex-column align-items-center" key={review._id}>
+                                            <h1>Your review!</h1>
+                                            <Review review={review} />
+                                        </div>
+                                        )
+                                    }
 
-                            })}
-                        </div>
+                                })}
+                            </div>
                         }
                     </div>
                     <div className="mt-3 mb-3 ps-3">
@@ -175,7 +175,7 @@ export default function MovieDetails()
             {movie &&
                 <div className="d-flex flex-column w-25 ps-3">
                     <h2>Reviews: </h2>
-                    <ReviewsList reviews={movie.reviews} deleteReview={deleteReview} user={user} />
+                    <ReviewsList reviews={movie.reviews} deleteReview={deleteReview} type={"movies"} production={movie} user={user} />
                 </div>
             }
 

@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
 import axios from 'axios';
 
-import CarouselRowMovies from './CarouselRowMovies';
-import CarouselRowSeries from './CarouselRowSeries';
+import CarouselRowMovies from './Carousel/CarouselRowMovies';
+import CarouselRowSeries from './Carousel/CarouselRowSeries';
 
 export default function Home()
 {
@@ -25,7 +25,7 @@ export default function Home()
                 const topSeries = response.data.sort((a, b) => b.rating - a.rating).slice(0, 3);
                 const favouriteSeries = response.data.sort((a, b) => b.favouriteNumber - a.favouriteNumber).slice(0, 3);
                 const watchedSeries = response.data.sort((a, b) => b.reviews.length - a.reviews.length).slice(0, 3);
-                setSeries({topSeries, favouriteSeries, watchedSeries});
+                setSeries({ topSeries, favouriteSeries, watchedSeries });
             });
         }
         getData();

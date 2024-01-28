@@ -2,19 +2,19 @@ import React, { useEffect } from 'react'
 
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import SearchBar from './SearchBar';
-import SearchResultsList from './SearchResultsList'
+import SearchBar from '../SearchBar/SearchBar';
+import SearchResultsList from '../SearchBar/SearchResultsList'
 import { jwtDecode } from "jwt-decode";
 
 
-function ResponsiveAppBar({ handleLogout })
+function ResponsiveAppBar()
 {
-    
+
 
     try
     {
         var decodedUser = jwtDecode(localStorage.getItem('accessToken'));
-        
+
     }
     catch (e)
     {
@@ -85,7 +85,7 @@ function ResponsiveAppBar({ handleLogout })
                                 </a>
                                 <ul className="dropdown-menu">
                                     <li><Link className="dropdown-item" to={`/users/${decodedUser.id}`}>Account</Link></li>
-                                    <li><Link className="dropdown-item" onClick={handleLogout} to={"/logout"}>Logout</Link></li>
+                                    <li><Link className="dropdown-item" to={"/logout"}>Logout</Link></li>
                                 </ul>
                             </li>
                         }

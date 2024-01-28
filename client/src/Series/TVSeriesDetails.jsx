@@ -121,7 +121,7 @@ export default function TVSeriesDetails()
             {series &&
 
                 <div className="mt-3">
-                    <div className="d-flex justify-content-start align-items-center bg-light p-3">
+                    <div className="d-flex justify-content-between align-items-center bg-light p-3">
                         <div>
                             <div className="d-flex align-items-center">
                                 <h1>{series.title} </h1>
@@ -185,7 +185,7 @@ export default function TVSeriesDetails()
             {series &&
                 <div className="d-flex flex-column w-25 ps-3">
                     <h2>Reviews: </h2>
-                    <ReviewsList reviews={series.reviews} deleteReview={deleteReview} user={user} />
+                    <ReviewsList reviews={series.reviews} deleteReview={deleteReview} type={"series"} production={series} user={user} />
                 </div>
             }
 

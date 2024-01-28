@@ -1,7 +1,7 @@
 import Carousel from './Carousel'
-import FavouriteIcon from './Icons/FavouriteIcon'
-import TopIcon from './Icons/TopIcon'
-import WatchedIcon from './Icons/WatchedIcon'
+import FavouriteIcon from '../Icons/FavouriteIcon'
+import TopIcon from '../Icons/TopIcon'
+import WatchedIcon from '../Icons/WatchedIcon'
 export default function CarouselRowSeries({ series })
 {
 

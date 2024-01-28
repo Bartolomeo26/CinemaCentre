@@ -6,7 +6,7 @@ module.exports.series = [{
     director: "David Benioff",
     releaseYear: 2011,
     seasons: 8,
-    actors:[7]
+    actors: [7, 52, 55]
 },
 {
     title: "The Office",
@@ -16,8 +16,8 @@ module.exports.series = [{
     director: "Greg Daniels",
     releaseYear: 2005,
     seasons: 9,
-    actors:[9]
-    
+    actors: [9, 60, 65]
+
 },
 {
     title: "Breaking Bad",
@@ -27,8 +27,8 @@ module.exports.series = [{
     director: "Vince Gilligan",
     releaseYear: 2008,
     seasons: 5,
-    actors:[]
-    
+    actors: [39, 40]
+
 },
 {
     title: "Peaky Blinders",
@@ -38,8 +38,8 @@ module.exports.series = [{
     director: "Steven Knight",
     releaseYear: 2013,
     seasons: 6,
-    actors:[]
-    
+    actors: [12, 27, 56]
+
 },
 {
     title: "The Boys",
@@ -49,8 +49,8 @@ module.exports.series = [{
     director: "Eric Kripke",
     releaseYear: 2019,
     seasons: 4,
-    actors:[]
-    
+    actors: [63, 64]
+
 },
 {
     title: "Friends",
@@ -60,19 +60,19 @@ module.exports.series = [{
     director: "David Crane",
     releaseYear: 1994,
     seasons: 10,
-    actors:[]
-    
+    actors: [38, 49, 50, 51]
+
 },
 {
     title: "Severance",
     imageUrl: "https://m.media-amazon.com/images/M/MV5BMjkwZjcwMGQtNDAzOC00YjJiLThiYTgtNWU3ZjRiZmY2YzEzXkEyXkFqcGdeQXVyMTMzNDExODE5._V1_QL75_UX190_CR0,2,190,281_.jpg",
-    description: "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives. When a mysterious colleague appears outside of work, it begins a journey to discover the truth about their jobs.",
+    description: "Biotechnology corporation Lumon Industries uses a medical procedure called 'severance' to separate the memories of their employees depending spatially on whether they are at work or not.",
     country: "USA",
     director: "Dan Erickson",
     releaseYear: 2022,
     seasons: 2,
-    actors:[]
-    
+    actors: [57]
+
 },
 {
     title: "Stranger Things",
@@ -82,8 +82,8 @@ module.exports.series = [{
     director: "Matt Duffer",
     releaseYear: 2016,
     seasons: 5,
-    actors:[]
-    
+    actors: [61, 62]
+
 },
 {
     title: "True Detective",
@@ -93,19 +93,19 @@ module.exports.series = [{
     director: "Nic Pizzolatto",
     releaseYear: 2014,
     seasons: 4,
-    actors:[]
-    
+    actors: [1, 68]
+
 },
 {
     title: "Sherlock",
     imageUrl: "https://fwcdn.pl/fpo/89/92/528992/7864164.3.jpg",
-    description: "The quirky spin on Conan Doyle's iconic sleuth pitches him as a 'high-functioning sociopath' in modern-day London. Assisting him in his investigations: Afghanistan War vet John Watson, who's introduced to Holmes by a mutual acquaintance.",
+    description: "Sherlock is a crime television series that presents a contemporary adaptation of Sir Arthur Conan Doyle's Sherlock Holmes detective stories.",
     country: "United Kingdom",
     director: "Mark Gatiss",
     releaseYear: 2010,
     seasons: 4,
-    actors:[]
-    
+    actors: [58, 59]
+
 },
 {
     title: "Dexter",
@@ -115,19 +115,19 @@ module.exports.series = [{
     director: "James Manos Jr.",
     releaseYear: 2016,
     seasons: 8,
-    actors:[]
-    
+    actors: [47]
+
 },
 {
-    title: "Black Mirror",
-    imageUrl: "https://m.media-amazon.com/images/M/MV5BZTgyNTBkNzctN2I3NC00NTA1LWJiMDMtYzA2MmYyZjc1NWQzXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
-    description: "An anthology series exploring a twisted, high-tech multiverse where humanity's greatest innovations and darkest instincts collide.",
-    country: "United Kingdom",
-    director: "Charlie Brooker",
-    releaseYear: 2011,
-    seasons: 7,
-    actors:[]
-    
+    title: "Mr. Robot",
+    imageUrl: "https://m.media-amazon.com/images/M/MV5BM2QyNDIzOGMtNThhNS00NmUwLWI0ZjUtZjdkN2I1OTRjZWQ3XkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_FMjpg_UX1000_.jpg",
+    description: "Mr. Robot is the co-founder and leader of the hacker group fsociety, a revolutionary prophet who plans to bring down the world's largest conglomerate.",
+    country: "USA",
+    director: "Sam Esmail",
+    releaseYear: 2015,
+    seasons: 4,
+    actors: [53]
+
 },
 {
     title: "The Queen's Gambit",
@@ -137,19 +137,19 @@ module.exports.series = [{
     director: "Scott Frank",
     releaseYear: 2020,
     seasons: 1,
-    actors:[]
-    
+    actors: [66, 67]
+
 },
 {
-    title: "Westworld",
-    imageUrl: "https://m.media-amazon.com/images/M/MV5BZDg1OWRiMTktZDdiNy00NTZlLTg2Y2EtNWRiMTcxMGE5YTUxXkEyXkFqcGdeQXVyMTM2MDY0OTYx._V1_FMjpg_UX1000_.jpg",
-    description: "At the intersection of the near future and the reimagined past, waits a world in which every human appetite can be indulged without consequence.",
-    country: "USA",
-    director: "Lisa Joy",
-    releaseYear: 2016,
+    title: "The Witcher",
+    imageUrl: "https://m.media-amazon.com/images/M/MV5BMDEwOWVlY2EtMWI0ZC00OWVmLWJmZGItYTk3YjYzN2Y0YmFkXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
+    description: "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.",
+    country: "USA/Poland",
+    director: "Lauren Schmidt Hissrich",
+    releaseYear: 2019,
     seasons: 4,
-    actors:[]
-    
+    actors: [6, 69]
+
 },
 {
     title: "Dr House",
@@ -159,8 +159,8 @@ module.exports.series = [{
     director: "David Shore",
     releaseYear: 2004,
     seasons: 8,
-    actors:[]
-    
+    actors: [48]
+
 },
 {
     title: "Dark",
@@ -170,8 +170,8 @@ module.exports.series = [{
     director: "Baran bo Odar",
     releaseYear: 2017,
     seasons: 3,
-    actors:[]
-    
+    actors: [45, 46]
+
 },
 {
     title: "Chernobyl",
@@ -181,8 +181,8 @@ module.exports.series = [{
     director: "Eric Kripke",
     releaseYear: 2019,
     seasons: 1,
-    actors:[]
-    
+    actors: [41, 42]
+
 },
 {
     title: "Band of Brothers",
@@ -192,8 +192,8 @@ module.exports.series = [{
     director: "Phil Alden Robinson",
     releaseYear: 2001,
     seasons: 1,
-    actors:[]
-    
+    actors: [36, 37, 38]
+
 },
 {
     title: "Daredevil",
@@ -203,8 +203,8 @@ module.exports.series = [{
     director: "Drew Goddard",
     releaseYear: 2015,
     seasons: 3,
-    actors:[]
-    
+    actors: [43, 44]
+
 },
 {
     title: "Narcos",
@@ -214,6 +214,6 @@ module.exports.series = [{
     director: "Carlo Bernard",
     releaseYear: 2015,
     seasons: 3,
-    actors:[]
-    
+    actors: [54, 55]
+
 }];

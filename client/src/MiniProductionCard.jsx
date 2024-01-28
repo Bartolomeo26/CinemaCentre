@@ -13,7 +13,7 @@ export default function MiniProductionCard({ production, type })
                         <img src={production.imageUrl} className="img-fluid rounded-start" alt="production image" />
                     </div>
                     <div className="col-md-8">
-                        <div className="card-body pt-0 pb-0">
+                        <div className="card-body pt-0 pb-0 pe-1 ps-2">
                             <div className="d-flex flex-column justify-content-between mt-2">
                                 <p className="mb-0 mt-0 user-rating">Your rating:<StarIcon style={{ color: 'gold', fontSize: 'small' }} /> {production.rating}</p>
                                 <h5 className="card-title fs-6 fw-bold">{production.title}</h5>

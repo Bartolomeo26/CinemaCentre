@@ -5,9 +5,9 @@ import MovieDetails from './Movies/MovieDetails';
 import MoviesList from './Movies/MoviesList';
 import TVSeriesList from './Series/TVSeriesList';
 import TVSeriesDetails from './Series/TVSeriesDetails';
-import NotFound from './NotFound';
-import ResponsiveAppBar from './Navbar';
-import Footer from './Footer';
+import NotFound from './Partials/NotFound';
+import ResponsiveAppBar from './Partials/Navbar';
+import Footer from './Partials/Footer';
 import ActorsList from './Actors/ActorsList';
 import ActorDetails from './Actors/ActorDetails';
 import UserDetails from './Users/UserDetails';
@@ -18,23 +18,19 @@ import Home from './Home';
 import MoviesRanking from './Rankings/MoviesRanking';
 import SeriesRanking from './Rankings/SeriesRanking'
 import { AuthContext } from './helpers/AuthContext';
+import EditReview from './Reviews/EditReview';
 
 function App()
 {
 
-  const [isLoggedIn, setLoggedIn] = useState(true);
   const [authState, setAuthState] = useState(false);
 
-  const handleLogout = () =>
-  {
 
-    setLoggedIn(!isLoggedIn);
-  };
 
   return (
     <>
-      <AuthContext.Provider value={{authState, setAuthState}}>
-        <ResponsiveAppBar handleLogout={handleLogout} />
+      <AuthContext.Provider value={{ authState, setAuthState }}>
+        <ResponsiveAppBar />
         <div className="m-3 ms-4">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -42,8 +38,10 @@ function App()
             <Route path="/rankings/series" element={<SeriesRanking />} />
             <Route path="/movies" element={<MoviesList />} />
             <Route path="/movies/:id" element={<MovieDetails />} />
+            <Route path="/movies/:id/reviews/:reviewId/edit" element={<EditReview />} />
             <Route path="/series" element={<TVSeriesList />} />
             <Route path="/series/:id" element={<TVSeriesDetails />} />
+            <Route path="/series/:id/reviews/:reviewId/edit" element={<EditReview />} />
             <Route path="/actors" element={<ActorsList />} />
             <Route path="/actors/:id" element={<ActorDetails />} />
             <Route path="/users/:id" element={<UserDetails />} />
