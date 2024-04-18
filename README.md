@@ -18,7 +18,7 @@ After installing all the dependencies, the next step is to run the local databas
 
 Running the database:
 ```bash
-nodemon app.js
+mongo
 ```
 Seeding the database:
 ```bash
@@ -27,7 +27,12 @@ node seeds_actors.js seeds_movies.js seeds_series.js
 ```
 Starting the application:
 ```bash
+cd server
 nodemon app.js
+```
+```bash
+cd client
+npm run dev
 ```
 The home page which is a starting point of the application presents us six different carousels - each showing three different productions (movies/series) in the order which is based on notes, number of reviews and number of 'favourites' that logged in users are able to give them.
 
