@@ -67,4 +67,4 @@ Website offers also a possibility of seeing other users' watched/favourite movie
 
 # Possible development
 
-The project still does a have great potential for further development given the fact that there are plenty of other features seen on sites like IMDB or Filmweb that could definitely be implemented. My further learning process when it comes to React will surely help in making those changes by making the site even more user friendly when it comes to UI and number of possibilites that it offers to them.
+The project still does a have great potential for further development given the fact that there are plenty of other features seen on sites like IMDB or Filmweb that could definitely be implemented. My further learning process when it comes to React will surely help in making those changes by making the site even more user friendly when it comes to UI and increasing number of possibilites that it offers to them.
