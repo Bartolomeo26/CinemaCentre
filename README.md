@@ -28,7 +28,7 @@ node seeds_actors.js seeds_movies.js seeds_series.js
 Starting the application:
 ```bash
 cd server
-nodemon app.js
+nodemon index.js
 ```
 ```bash
 cd client
