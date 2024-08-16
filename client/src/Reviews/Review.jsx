@@ -25,7 +25,7 @@ export default function Review({ review, deleteReview, user, production, type })
                             <small className='text-body-secondary'>Date: {review.date}</small>
                             {user && user._id === review.author._id &&
                                 <div>
-                                    <button className='btn btn-sm ' onClick={() => navigate(`/${type}/${production._id}/reviews/${review._id}/edit`, { state: { czesc: 'gowno' } })}><EditIcon style={{ color: 'blue' }} /></button>
+                                    <button className='btn btn-sm ' onClick={() => navigate(`/${type}/${production._id}/reviews/${review._id}/edit`)}><EditIcon style={{ color: 'blue' }} /></button>
                                     <button className='btn btn-sm ' onClick={async () => { await deleteReview(review._id) }}><DeleteIcon style={{ color: 'red' }} /></button>
                                 </div>}
                         </div>

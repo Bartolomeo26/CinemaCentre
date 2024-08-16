@@ -6,6 +6,7 @@ module.exports.displayUser = async (req, res) =>
 {
     const { id } = req.params;
 
+
     const user = await User.findById(id).populate({ path: "reviews", populate: { path: "author" } }).populate('favouriteMovies').populate('watchedMovies').populate('favouriteSeries').populate('watchedSeries');
     res.json(user);
 }

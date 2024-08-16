@@ -28,6 +28,7 @@ module.exports.addReviewToMovies = async (req, res) =>
     movie.reviews.push(newReview);
     movie.rating = rating.toFixed(2);
     await movie.save();
+    res.send(newReview);
 }
 
 module.exports.editReviewInMovies = async (req, res) =>

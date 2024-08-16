@@ -10,6 +10,7 @@ export default function UserDetails()
     const { id } = useParams();
 
     const [user, setUser] = useState(null);
+
     useEffect(() =>
     {
         async function getUser()

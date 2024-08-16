@@ -23,6 +23,7 @@ export default function MovieDetails()
     const [isWatched, setIsWatched] = useState(false);
     const [isFavourite, setIsFavourite] = useState(false);
     const [isRevieved, setIsRevieved] = useState(false);
+    const [reviews, setReviews] = useState(null);
 
 
 
@@ -30,7 +31,9 @@ export default function MovieDetails()
     {
         async function getMovie()
         {
-            await axios.get(`http://localhost:3000/movies/${id}`).then((response) => { setMovie(response.data) });
+            await axios.get(`http://localhost:3000/movies/${id}`)
+                .then((response) => { setReviews(response.data.reviews); setMovie(response.data); });
+
 
         }
         async function getUser()
@@ -47,46 +50,57 @@ export default function MovieDetails()
 
         getMovie();
         getUser();
-    }, [movie])
+    }, [])
     useEffect(() =>
     {
-        async function isItWatched()
-        {
-            if (user && movie) setIsWatched(user.watchedMovies.some((el) => { return el._id === movie._id }));
-        }
-        async function isItFavourite()
-        {
-            if (user && movie) setIsFavourite(user.favouriteMovies.some((el) => { return el._id === movie._id }));
-        }
 
-        isItWatched();
-        isItFavourite();
+        if (user && movie) setIsWatched(user.watchedMovies.some((el) => { return el._id === movie._id }));
+        if (user && movie) setIsFavourite(user.favouriteMovies.some((el) => { return el._id === movie._id }));
+
     })
     useEffect(() =>
     {
-        async function isItRevieved()
-        {
-            if (user && movie) setIsRevieved(movie.reviews.some((el) => { return el.author._id === user._id }));
-        }
-        isItRevieved()
-    })
+
+        if (user) setIsRevieved(reviews.some((el) => { return el.author._id === user._id }));
+
+
+    }, [reviews])
 
     async function addReview(formData)
     {
-        await axios.post(`http://localhost:3000/movies/${id}/reviews`, formData, { headers: { accessToken: localStorage.getItem('accessToken') } }).then((response) =>
-        {
+        console.log(formData);
 
-            if (response.data.error) alert(response.data.error)
+        await axios.post(`http://localhost:3000/movies/${id}/reviews`, formData, { headers: { accessToken: localStorage.getItem('accessToken') } })
+            .then(function (response)
+            {
+                setReviews((prevReviews) => { return [...prevReviews, { ...response.data, author: user }] });
 
-        })
+                console.log(response.data);
+
+            })
+            .catch(function (error)
+            {
+                console.log(error);
+            });
     }
     async function deleteReview(reviewId)
     {
-        await axios.delete(`http://localhost:3000/movies/${id}/reviews/${reviewId}`, { headers: { accessToken: localStorage.getItem('accessToken') } }).then((response) =>
-        {
-            if (response.data.error) alert(response.data.error)
+        console.log('hejka')
+        setReviews((prevReviews) => { return prevReviews.filter(review => review._id !== reviewId) });
+        await axios.delete(`http://localhost:3000/movies/${id}/reviews/${reviewId}`, { headers: { accessToken: localStorage.getItem('accessToken') } })
+            .then(function (response)
+            {
 
-        })
+
+                console.log(response.data);
+
+            })
+            .catch(function (error)
+            {
+                console.log(error);
+            });
+
+
     }
     async function addWatched()
     {
@@ -95,6 +109,7 @@ export default function MovieDetails()
             if (response.data.error) alert(response.data.error)
 
         })
+        console.log(!isWatched)
     }
     async function addFavourite()
     {
@@ -103,12 +118,10 @@ export default function MovieDetails()
             if (response.data.error) alert(response.data.error)
 
         })
+        setIsFavourite(true);
     }
     return (
         <>
-
-
-
             {movie &&
 
                 <div className="mt-3">
@@ -140,10 +153,10 @@ export default function MovieDetails()
                                 </div>
                             </div>
                         </div>
-                        {user && movie.reviews &&
+                        {user && reviews &&
                             <div className="me-5">
 
-                                {movie.reviews.map((review) =>
+                                {reviews.map((review) =>
                                 {
                                     if (review.author._id === user._id)
                                     {
@@ -175,7 +188,7 @@ export default function MovieDetails()
             {movie &&
                 <div className="d-flex flex-column w-25 ps-3">
                     <h2>Reviews: </h2>
-                    <ReviewsList reviews={movie.reviews} deleteReview={deleteReview} type={"movies"} production={movie} user={user} />
+                    <ReviewsList reviews={reviews} deleteReview={deleteReview} type={"movies"} production={movie} user={user} />
                 </div>
             }
 
