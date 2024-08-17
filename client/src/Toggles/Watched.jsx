@@ -5,7 +5,6 @@ import { useState } from 'react';
 export default function Watched({ addWatched, isSelected })
 {
 
-  const [selected, setSelected] = useState(false);
   
 
   return (
@@ -14,7 +13,7 @@ export default function Watched({ addWatched, isSelected })
       selected={isSelected}
       onChange={() =>
       {
-        setSelected(!selected);
+   
         addWatched();
         
       }}

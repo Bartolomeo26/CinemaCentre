@@ -20,8 +20,8 @@ export default function MovieDetails()
 
     const [movie, setMovie] = useState(null);
     const [user, setUser] = useState(null);
-    const [isWatched, setIsWatched] = useState(false);
-    const [isFavourite, setIsFavourite] = useState(false);
+    const [isWatched, setIsWatched] = useState();
+    const [isFavourite, setIsFavourite] = useState();
     const [isRevieved, setIsRevieved] = useState(false);
     const [reviews, setReviews] = useState(null);
 
@@ -57,7 +57,7 @@ export default function MovieDetails()
         if (user && movie) setIsWatched(user.watchedMovies.some((el) => { return el._id === movie._id }));
         if (user && movie) setIsFavourite(user.favouriteMovies.some((el) => { return el._id === movie._id }));
 
-    })
+    }, [user])
     useEffect(() =>
     {
 
@@ -85,7 +85,7 @@ export default function MovieDetails()
     }
     async function deleteReview(reviewId)
     {
-        console.log('hejka')
+
         setReviews((prevReviews) => { return prevReviews.filter(review => review._id !== reviewId) });
         await axios.delete(`http://localhost:3000/movies/${id}/reviews/${reviewId}`, { headers: { accessToken: localStorage.getItem('accessToken') } })
             .then(function (response)
@@ -104,21 +104,24 @@ export default function MovieDetails()
     }
     async function addWatched()
     {
+        setIsWatched(prevWatched => !prevWatched)
         await axios.post(`http://localhost:3000/movies/${id}/watched`, { selected: !isWatched }, { headers: { accessToken: localStorage.getItem('accessToken') } }).then((response) =>
         {
             if (response.data.error) alert(response.data.error)
 
         })
-        console.log(!isWatched)
+
     }
     async function addFavourite()
     {
+        
+        setIsFavourite(prevFavourite => !prevFavourite);
         await axios.post(`http://localhost:3000/movies/${id}/favourites`, { selected: !isFavourite }, { headers: { accessToken: localStorage.getItem('accessToken') } }).then((response) =>
         {
             if (response.data.error) alert(response.data.error)
 
         })
-        setIsFavourite(true);
+
     }
     return (
         <>
