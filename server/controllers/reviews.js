@@ -76,6 +76,7 @@ module.exports.addReviewToSeries = async (req, res) =>
     series.reviews.push(newReview);
     series.rating = rating.toFixed(2);
     await series.save();
+    res.send(newReview);
 }
 
 module.exports.editReviewInSeries = async (req, res) =>

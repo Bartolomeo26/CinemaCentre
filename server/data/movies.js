@@ -19,7 +19,7 @@ module.exports.movies = [{
 },
 {
     title: "Shawshank Redemption",
-    imageUrl: "https://fwcdn.pl/fpo/10/48/1048/6925401.6.jpg",
+    imageUrl: "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
     description: "In 1947, Andy Dufresne (Tim Robbins), a banker in Maine, is convicted of murdering his wife and her lover, a golf pro. Since the state of Maine has no death penalty, he is given two consecutive life sentences and sent to the notoriously harsh Shawshank Prison.",
     country: "USA",
     director: "Frank Darabont",
@@ -49,7 +49,7 @@ module.exports.movies = [{
 },
 {
     title: "Forrest Gump",
-    imageUrl: "https://fwcdn.pl/fpo/09/98/998/8021615.3.jpg",
+    imageUrl: "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
     description: "The history of the United States from the 1950s to the '70s unfolds from the perspective of an Alabama man with an IQ of 75, who yearns to be reunited with his childhood sweetheart.",
     country: "USA",
     director: "Robert Zemeckis",
@@ -59,7 +59,7 @@ module.exports.movies = [{
 },
 {
     title: "Inception",
-    imageUrl: "https://fwcdn.pl/fpo/08/91/500891/7354571.3.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/912AErFSBHL._AC_UF1000,1000_QL80_.jpg",
     description: "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.",
     country: "USA",
     director: "Christopher Nolan",
@@ -69,7 +69,7 @@ module.exports.movies = [{
 },
 {
     title: "Fightclub",
-    imageUrl: "https://fwcdn.pl/fpo/08/37/837/7522091.3.jpg",
+    imageUrl: "https://m.media-amazon.com/images/M/MV5BMmEzNTkxYjQtZTc0MC00YTVjLTg5ZTEtZWMwOWVlYzY0NWIwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg",
     description: "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
     country: "USA",
     director: "Frank Darabont",
@@ -89,7 +89,7 @@ module.exports.movies = [{
 },
 {
     title: "Seven",
-    imageUrl: "https://fwcdn.pl/fpo/07/02/702/8021069.3.jpg",
+    imageUrl: "https://m.media-amazon.com/images/M/MV5BOTUwODM5MTctZjczMi00OTk4LTg3NWUtNmVhMTAzNTNjYjcyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_FMjpg_UX1000_.jpg",
     description: "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.",
     country: "USA",
     director: "David Fincher",
@@ -99,7 +99,7 @@ module.exports.movies = [{
 },
 {
     title: "Oppenheimer",
-    imageUrl: "https://fwcdn.pl/fpo/28/17/10002817/8072064.3.jpg",
+    imageUrl: "https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_FMjpg_UX1000_.jpg",
     description: "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.",
     country: "USA",
     director: "Christopher Nolan",
@@ -189,7 +189,7 @@ module.exports.movies = [{
 },
 {
     title: "Rain Man",
-    imageUrl: "https://fwcdn.pl/fpo/10/08/1008/7521209.6.jpg",
+    imageUrl: "https://m.media-amazon.com/images/M/MV5BMzVjNzI4NzYtMjE4NS00M2IzLWFkOWMtOTYwMWUzN2ZlNGVjL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg",
     description: "After a selfish L.A. yuppie learns his estranged father left a fortune to an autistic-savant brother in Ohio that he didn't know existed, he absconds with his brother and sets out across the country, hoping to gain a larger inheritance.",
     country: "USA",
     director: "Barry Levinson",

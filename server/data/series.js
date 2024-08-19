@@ -98,7 +98,7 @@ module.exports.series = [{
 },
 {
     title: "Sherlock",
-    imageUrl: "https://fwcdn.pl/fpo/89/92/528992/7864164.3.jpg",
+    imageUrl: "https://m.media-amazon.com/images/M/MV5BNTQzNGZjNDEtOTMwYi00MzFjLWE2ZTYtYzYxYzMwMjZkZDc5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     description: "Sherlock is a crime television series that presents a contemporary adaptation of Sir Arthur Conan Doyle's Sherlock Holmes detective stories.",
     country: "United Kingdom",
     director: "Mark Gatiss",
@@ -153,7 +153,7 @@ module.exports.series = [{
 },
 {
     title: "Dr House",
-    imageUrl: "https://fwcdn.pl/fpo/01/77/130177/7221239.3.jpg",
+    imageUrl: "https://m.media-amazon.com/images/M/MV5BMDA4NjQzN2ItZDhhNC00ZjVlLWFjNTgtMTEyNDQyOGNjMDE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_FMjpg_UX1000_.jpg",
     description: "Using a crack team of doctors and his wits, an antisocial maverick doctor specializing in diagnostic medicine does whatever it takes to solve puzzling cases that come his way.",
     country: "United Kingdom",
     director: "David Shore",
@@ -164,7 +164,7 @@ module.exports.series = [{
 },
 {
     title: "Dark",
-    imageUrl: "https://fwcdn.pl/fpo/13/83/771383/7814585.3.jpg",
+    imageUrl: "https://m.media-amazon.com/images/M/MV5BOTk2NzUyOTctZDdlMS00MDJlLTgzNTEtNzQzYjFhNjA0YjBjXkEyXkFqcGdeQXVyMjg1NDcxNDE@._V1_.jpg",
     description: "A family saga with a supernatural twist, set in a German town where the disappearance of two young children exposes the relationships among four families.",
     country: "Germany",
     director: "Baran bo Odar",
@@ -175,7 +175,7 @@ module.exports.series = [{
 },
 {
     title: "Chernobyl",
-    imageUrl: "https://fwcdn.pl/fpo/98/27/799827/7900027_1.3.jpg",
+    imageUrl: "https://m.media-amazon.com/images/M/MV5BNTdkN2QwMDItMDVhNS00ZjFiLWEzNTctMzY5ODQzYWNkMDllXkEyXkFqcGdeQXVyMTMzNDExODE5._V1_.jpg",
     description: "In April 1986, an explosion at the Chernobyl nuclear power plant in the Union of Soviet Socialist Republics becomes one of the world's worst man-made catastrophes.",
     country: "USA",
     director: "Eric Kripke",
@@ -208,7 +208,7 @@ module.exports.series = [{
 },
 {
     title: "Narcos",
-    imageUrl: "https://fwcdn.pl/fpo/04/86/680486/7801516.3.jpg",
+    imageUrl: "https://m.media-amazon.com/images/M/MV5BNmFjODU3YzgtMGUwNC00ZGI3LWFkZjQtMjkxZDc3NmQ1MzcyXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_.jpg",
     description: "A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many other drug kingpins who plagued the country through the years.",
     country: "USA",
     director: "Carlo Bernard",

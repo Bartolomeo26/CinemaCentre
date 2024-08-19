@@ -22,6 +22,7 @@ export default function MovieDetails()
     const [user, setUser] = useState(null);
     const [isWatched, setIsWatched] = useState();
     const [isFavourite, setIsFavourite] = useState();
+    const [numberFav, setNumberFav] = useState(0);
     const [isRevieved, setIsRevieved] = useState(false);
     const [reviews, setReviews] = useState(null);
 
@@ -32,7 +33,7 @@ export default function MovieDetails()
         async function getMovie()
         {
             await axios.get(`http://localhost:3000/movies/${id}`)
-                .then((response) => { setReviews(response.data.reviews); setMovie(response.data); });
+                .then((response) => { setReviews(response.data.reviews); setNumberFav(response.data.favouriteNumber); setMovie(response.data); });
 
 
         }
@@ -114,11 +115,13 @@ export default function MovieDetails()
     }
     async function addFavourite()
     {
-        
+
         setIsFavourite(prevFavourite => !prevFavourite);
+        setNumberFav(prevNumber => !isFavourite ? ++prevNumber : --prevNumber);
         await axios.post(`http://localhost:3000/movies/${id}/favourites`, { selected: !isFavourite }, { headers: { accessToken: localStorage.getItem('accessToken') } }).then((response) =>
         {
             if (response.data.error) alert(response.data.error)
+
 
         })
 
@@ -145,7 +148,7 @@ export default function MovieDetails()
 
                                     </div>}
                             </div>
-                            <h2><StarIcon style={{ color: 'gold', fontSize: 45 }} />{movie.rating}/10 <small className="text-body-secondary fs-6">{movie.reviews.length}{` community ratings (${movie.favouriteNumber} loved it!)`}</small></h2>
+                            <h2><StarIcon style={{ color: 'gold', fontSize: 45 }} />{movie.rating}/10 <small className="text-body-secondary fs-6">{reviews.length}{` community ratings (${numberFav} loved it!)`}</small></h2>
                             <div className="d-flex w-50">
                                 <img src={movie.imageUrl} alt="" className="img-fluid movie-image" />
                                 <div className="d-flex flex-column ms-2">
